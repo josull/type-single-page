@@ -18,12 +18,12 @@
 }
 /* how the page wrapper will appear on mobile */
 .page-wrapper{
-    width: min(100% - 3rem, 80ch);
+    width: min(100% - 4rem);
     margin-inline: auto;
 }
 /* how the page wrapper appears on desktop */
 
-@media only screen and (min-width:800px){
+/* @media only screen and (min-width:800px){
 .page-wrapper{
 display: grid;
 grid-gap: 25px;
@@ -33,19 +33,34 @@ grid-template-areas:
     "h v"
     "a a";
 }
+} */
+.two-section{
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "h g"
+        "h g";
+    }
+    
+    #history
+    {
+        grid-area: h;
+        }
 
-.history {
-grid-area: h;
-}
+    #glyphs{
+            grid-area: g;
+            }
 
-.variations{
+.alphabet{
 grid-area: v;
 }
 
-.alphabet {
+.download {
 grid-area: a;
 }
-}
+
 /* CSS for the footer */
 footer{
     background-color: gray;
