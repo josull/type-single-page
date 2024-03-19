@@ -4,6 +4,8 @@
   
   body {
     margin: 0;
+    font-variation-settings: "wdth" 90, "wght" 95, "opsz" 12;
+
   }
   
   header {

@@ -78,8 +78,12 @@ footer{
 
 h1{
     font-size: 23px;
+    font-variation-settings: "wdth" 90, "wght" 90, "opsz" 12;
 }
 
+p{
+    font-variation-settings: "wdth" 90, "wght" 55, "opsz" 12;
+}
 
 
 /* variable font animation */
