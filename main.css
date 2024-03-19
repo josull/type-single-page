@@ -13,8 +13,9 @@
     } */
 
     body{
-    background-color: lightsteelblue;
+    background-color: rgb(255, 255, 255);
     font-family: 'Voto';
+    font-size: larger;
 }
 /* how the page wrapper will appear on mobile */
 .page-wrapper{
@@ -34,6 +35,15 @@ grid-template-areas:
     "a a";
 }
 } */
+.heading{
+    background-color: #60abbb;
+}
+
+.hero{
+    background-color: #60abbb;
+    /* padding-top:20px; */
+}
+
 .two-section{
     display: grid;
     grid-gap: 25px;
@@ -63,14 +73,20 @@ grid-area: a;
 
 /* CSS for the footer */
 footer{
-    background-color: gray;
+    background-color: #60abbb;
 }
+
+h1{
+    font-size: 23px;
+}
+
+
 
 /* variable font animation */
 h3{
     font-weight:20; 
     text-align: center;
-    font-size: 5em;
+    font-size: 6em;
     animation: weightChange 7s infinite; 
 }
 
@@ -84,6 +100,7 @@ h3{
     }
     
 }
+
 /* variable font that changes on hover */
 .variable-font{
     font-weight:1 ;
