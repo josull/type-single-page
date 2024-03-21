@@ -15,12 +15,14 @@
     body{
     background-color: rgb(255, 255, 255);
     font-family: 'Voto';
-    font-size: larger;
+    /* font-size: larger; */
+    overflow-x: hidden;
 }
 /* how the page wrapper will appear on mobile */
 .page-wrapper{
     width: min(100% - 4rem);
-    margin-inline: auto;
+    margin: 0 auto;
+    /* margin-inline: auto; */
 }
 /* how the page wrapper appears on desktop */
 
@@ -74,6 +76,10 @@ grid-area: a;
 /* CSS for the footer */
 footer{
     background-color: #60abbb;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 2px;
 }
 
 h1{
@@ -86,13 +92,36 @@ p{
 }
 
 
-/* variable font animation */
+/* variable font animation in hero */
 h3{
     font-weight:20; 
     text-align: center;
     font-size: 6em;
     animation: weightChange 7s infinite; 
 }
+
+
+/* variable font animations in section */
+h4{
+    font-weight:20; 
+    text-align: left;
+    font-size: 3em;
+    animation: weightChangeSmall 7s infinite;
+}
+
+h5{
+    font-weight:20; 
+    text-align: left;
+    font-size: 3em;
+    animation: widthChangeSmall 7s infinite
+}
+
+h6{
+    font-size: 30px;
+    
+}
+
+/* Main in Hero */
 
 @keyframes weightChange {
     0%, 100%{
@@ -103,6 +132,33 @@ h3{
         font-variation-settings: "wdth" 100, "wght" 118, "opsz" 12;
     }
     
+    
+}
+
+/* Weight */
+
+@keyframes weightChangeSmall {
+    0%, 100%{
+     font-variation-settings: "wght" 8, "opsz" 12;
+    }
+
+    50%{
+        font-variation-settings: "wght" 188, "opsz" 12;
+    }
+
+}
+
+/* Width */
+
+@keyframes widthChangeSmall {
+    0%, 100%{
+     font-variation-settings: "wdth" 5, "opsz" 12;
+    }
+
+    50%{
+        font-variation-settings: "wdth" 188, "opsz" 12;
+    }
+
 }
 
 /* variable font that changes on hover */
@@ -131,3 +187,15 @@ h3{
     font-variation-settings: "wght" 120, "wdth" 0, "XXXX" 100;
 }
 
+/* Outline button styles */
+.outline {
+    background-color: transparent;
+    color: #007bff;
+    border: 2px solid #007bff;
+    transition: all 0.3s ease;
+}
+
+.outline:hover {
+    background-color: #007bff;
+    color: #fff;
+}
