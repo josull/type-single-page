@@ -25,8 +25,8 @@
 /* how the page wrapper will appear on mobile */
 .page-wrapper{
     width: min(100% - 4rem);
-    margin: 0 auto;
-    /* margin-inline: auto; */
+    margin: 4px auto;
+    margin-inline: auto;
 }
 /* how the page wrapper appears on desktop */
 
