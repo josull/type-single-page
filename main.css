@@ -1,3 +1,7 @@
+#p2 span:hover {
+    color: orange;
+}
+
 @font-face {
     src: url("fonts/VotoSerifGX.woff2") format("woff2"),
         url("fonts/VotoSerifGX.ttf") format('truetype');
@@ -87,9 +91,12 @@ h1{
     font-variation-settings: "wdth" 90, "wght" 90, "opsz" 12;
 }
 
-p{
+p2{
     font-variation-settings: "wdth" 90, "wght" 55, "opsz" 12;
+    font-size: 35px;
 }
+
+
 
 
 /* variable font animation in hero */
@@ -107,13 +114,15 @@ h4{
     text-align: left;
     font-size: 3em;
     animation: weightChangeSmall 7s infinite;
+    color: orange;
 }
 
 h5{
     font-weight:20; 
     text-align: left;
     font-size: 3em;
-    animation: widthChangeSmall 7s infinite
+    animation: widthChangeSmall 7s infinite;
+    color: orange;
 }
 
 h6{
